@@ -1,0 +1,46 @@
+{
+    "debate_agents": [
+        {
+            "id": "Fundamental_Analyst",
+            "class_name": "FundamentalAgent",
+            "module_path": "agents.fundamental",
+            "model": "llama3.1:latest",
+            "role_description": "華爾街資深基本面分析師，專注於企業內在價值與現金流健康度評估。",
+            "enabled": true
+        },
+        {
+            "id": "Technical_Analyst",
+            "class_name": "TechnicalAgent",
+            "module_path": "agents.technical",
+            "model": "llama3.1:latest",
+            "role_description": "華爾街頂尖技術線型大師，專注於量價動能與防守點位推演。",
+            "enabled": true
+        },
+        {
+            "id": "Chips_Macro_Analyst",
+            "class_name": "ChipsMacroAgent",
+            "module_path": "agents.chips_macro",
+            "model": "llama3.1:latest",
+            "role_description": "華爾街總經與籌碼分析大師，專注於流動性、通膨環境、政策利率與機構資金動向。",
+            "enabled": true
+        }
+    ],
+    "system_agents": [
+        {
+            "id": "Auditor",
+            "class_name": "AuditorAgent",
+            "module_path": "agents.auditor",
+            "model": "llama3.1:latest",
+            "role_description": "最高風控官 (CRO)，負責嚴格審核會議紀錄，抓出邏輯矛盾與 AI 幻覺。",
+            "enabled": true
+        },
+        {
+            "id": "Advisor",
+            "class_name": "AdvisorAgent",
+            "module_path": "agents.advisor",
+            "model": "llama3.1:latest",
+            "role_description": "華爾街 5+2 智囊團首席顧問 (CIO)，負責將專家意見轉化為結構化的最終決策白皮書。",
+            "enabled": true
+        }
+    ]
+}
